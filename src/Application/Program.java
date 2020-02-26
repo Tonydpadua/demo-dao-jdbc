@@ -11,13 +11,16 @@ public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		System.out.println("===TEST findById===");
 		Department dep=new Department(1,"Books");
 		
-		System.out.println(dep);
+		
 		
 		Seller seller=new Seller(2, "Bob", "bob@gmail.com", new Date(), 1000, dep);
 		
-		System.out.println(seller);
+		
 
 		SellerDao sd=DaoFactory.createSellerDao();
 		
