@@ -38,6 +38,23 @@ public class Program {
 		for(Seller obj:list) {
 			System.out.println(obj);
 		}
+		
+		/*
+		System.out.println();
+		System.out.println("==TEST Insert===");
+		Seller newSeller=new Seller(null, "Greg", "Greg@gmail.com", new Date(), 1000, dep);
+		sd.insert(newSeller);
+		System.out.println("Inserted! New Id: "+newSeller.getId());
+		*/
+		
+		System.out.println();
+		System.out.println("==TEST Update===");
+		Seller updateseller=sd.findById(1);
+		updateseller.setName("Bobson");
+		sd.update(updateseller);
+		System.out.println("Update Complete");
+		
+		
 	}
 	
 	
