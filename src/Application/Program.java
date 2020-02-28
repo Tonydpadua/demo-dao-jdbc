@@ -45,7 +45,8 @@ public class Program {
 		Seller newSeller=new Seller(null, "Greg", "Greg@gmail.com", new Date(), 1000, dep);
 		sd.insert(newSeller);
 		System.out.println("Inserted! New Id: "+newSeller.getId());
-		*/
+		
+		
 		
 		System.out.println();
 		System.out.println("==TEST Update===");
@@ -53,6 +54,15 @@ public class Program {
 		updateseller.setName("Bobson");
 		sd.update(updateseller);
 		System.out.println("Update Complete");
+		*/
+		
+		System.out.println();
+		System.out.println("==TEST delete===");
+		int id=10;
+		sd.deletById(id);
+		System.out.println("Deleted successfully!");
+		
+		
 		
 		
 	}
